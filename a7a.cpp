@@ -27,8 +27,8 @@ struct MonthlyBudget {
 
 //Function Prototypes
 void displayBudget(/*in*/MonthlyBudget);
-void getExpenses;
-void compareExpenses;
+//void getExpenses;
+//void compareExpenses;
 
 int main()
 {
@@ -46,7 +46,9 @@ void displayBudget(/*in*/MonthlyBudget v)
 //PRE: MonthlyBudget structure variable has been declared
 //POST: MontlyBudget member values have been printed to the screen
 {
-	double totalBudet = v.housing + v.utilities + v. household_expenses + v.transprotation + v.food + v.medical + v.insurance + v.entertainment + v.clothing + v.music; 
+	cout << endl;
+	double totalBudget = v.housing + v.utilities + v. household_expenses + v.transportation + v.food + v.medical + v.insurance + v.entertainment + v.clothing + v.misc; 
+	cout << endl
 	cout << "Here is your monthly budget for YEAR 2020:" << endl;
 	cout << "Housing" << "$" << v.housing << endl;
 	cout << "Utilities" << "$" << v.utilities << endl;
@@ -59,6 +61,6 @@ void displayBudget(/*in*/MonthlyBudget v)
 	cout << "Clothing" << "$" << v.clothing << endl;
 	cout << "Miscellaneous" << "$" << v.misc << endl;
 	cout << "=================================================" << endl;
-	cout << "Total Budgeted" << "$" << totalBudget << endl
+	cout << "Total Budgeted" << "$" << totalBudget << endl;
 	cout << "=================================================" << endl;
 }
